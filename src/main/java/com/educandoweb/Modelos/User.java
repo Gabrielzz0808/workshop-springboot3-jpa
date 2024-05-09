@@ -1,4 +1,4 @@
-package com.educandoweb.curso.Modelos;
+package com.educandoweb.Modelos;
 
 import java.io.Serializable;
 import java.util.UUID;
@@ -21,14 +21,11 @@ public class User implements Serializable {
     private String nome;
     private String email;
     private String senha;
-    private int telefone;
+    private String telefone;
 
-    public User(){
-
-    }
     
     
-    public User(UUID idUser, String nome, String email, String senha, int telefone) {
+    public User(UUID idUser, String nome, String email, String senha, String telefone) {
         this.idUser = idUser;
         this.nome = nome;
         this.email = email;
@@ -61,10 +58,10 @@ public class User implements Serializable {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
